@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/32782fb6bf.js" crossorigin="anonymous"></script>
+</head>
+<title>WORLD GYM</title>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="navbar">
+                <h1>WORLD GYM-</h1>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <ul class="links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="membership.html">MEMBERSHIP</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            
+            
+        </nav>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="membership.html">MEMBERSHIP</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+
+        <div class="text-box">
+            <h2>World's Biggest GYM</h2>
+            <p>
+                We are no.1 GYM all around the WORLD! <br> We give you Motivation, Inspiration and the Result!
+            </p>
+            <a href="" class="btn-contact">Contact Us To Know More</a>
+        </div>
+
+    </section>
+
+    <!-- membership -->
+    <section class="membership">
+        <h2>Memberships We Offer</h2>
+        <p>
+            Here are our offers fot YOU!
+        </p>
+        <div class="row">
+            <div class="member-col1">
+                <h3>BRONZE</h3>
+                <p>$12.99 24hrs ANYTIME</p>
+            </div>
+            <div class="vtcl"></div>
+            <div class="member-col2">
+                <h3>SILVER</h3>
+                <p>$15.99 24hrs ANYTIME <br> with free use of Massage chair and MORE!
+                </p>
+            </div>
+            <div class="vtcl"></div>
+            <div class="member-col3">
+                <h3>GOLD</h3>
+                <p>$20.99 24hrs ANYTIME <br> with Free use of Massage Chair, <br> Free WIFI, Access to Recovery Room
+                    <br> and
+                    MORE!
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--facility -->
+    <section class="facility">
+        <h2>What we have?</h2>
+        <p>You want to get fit? Look nice? Attractive? <br> Not just lifting, there are plenty of workouts here that you
+            can enjoy!</p>
+
+        <div class="row">
+            <div class="facility-col">
+                <img src="photos/features/cycle2.jpeg">
+                <div class="layer">
+                    <h3>CYCLE</h3>
+                </div>
+            </div>
+            <div class="facility-col">
+                <img src="photos/features/crossfit1.avif">
+                <div class="layer">
+                    <h3>CROSSFIT</h3>
+                </div>
+            </div>
+            <div class="facility-col">
+                <img src="photos/features/yoga1.avif">
+                <div class="layer">
+                    <h3>YOGA</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Location -->
+
+    <section class="location">
+        <h3>Our Locations</h3>
+        <p>We Are Everywhere!</p>
+        <div class="column">
+            <div class="location-col">
+                <img src="photos/location/newyork.jpeg">
+                <h3>NEW YORK</h3>
+                <p>Where we have started! No.1 biggest gym in the world!</p>
+                <hr>
+            </div>
+            <div class="location-col">
+                <img src="photos/location/seoul3.jpeg">
+                <h3>SEOUL</h3>
+                <p>No.1 biggest gym in Asia! with most memberships enrolled!</p>
+                <hr>
+            </div>
+            <div class="location-col">
+                <img src="photos/location/paris1.jpeg">
+                <h3>PARIS</h3>
+                <p>Our first gym in Europe! Biggest gym in Europe!</p>
+                <hr>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact">
+        <h2>Contact us if you want to join our team <br> Anywhere from the world</h2>
+        <a href="" class="btn-contact">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <hr class="hr">
+        <p>Since 1998 <br> We have been through many tasks and now we can help you to achieve your goal <br> Come and
+            see us to find what we can do and support each other</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+    </section>
+    <!-- ------JavaScript for Tolgle Menu -->
+    <script>
+
+const toggle_btn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggle_btn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+    
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
