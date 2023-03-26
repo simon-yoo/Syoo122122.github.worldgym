@@ -119,7 +119,7 @@ a{
     transition: 1s;
 }
 
-.navbar .toggle_btn{
+nav .toggle_btn{
     display: none;
     color: #fff;
     font-size: 1.5rem;
