@@ -182,7 +182,7 @@ a{
         display: none;
     }
 
-.navbar .toggle_btn{
+nav .toggle_btn{
     display: block;
 }
 
