@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/32782fb6bf.js" crossorigin="anonymous"></script>
+</head>
+<title>WORLD GYM</title>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="navbar">
+                <h1>WORLD GYM-</h1>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <ul class="links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="membership.html">MEMBERSHIP</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            
+            
+        </nav>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="membership.html">MEMBERSHIP</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+        <h2 class="subtitle">About Us</h2>
+    </section>
+    <!-- about us conten -->
+
+    <section class="aboout-us">
+        <div class="row">
+            <div class="about-col">
+                <h2>We are the world's best GYM</h2>
+                <p>We offer the most open, inclusive, empathetic, supportive fitness experience to every member at every
+                    level. Whether you are an absolute beginner or workout regularly, our gyms are spaces that you will
+                    feel comfortable <br> No matter who you are or what type of movement you enjoy most, World GYM is
+                    with you every step of the way. We believe that fitness has no boundaries, and we strive to make our
+                    clubs an inclusive place for everybody. <br>We constantly strive to meet and exceed our customer’s
+                    needs and expectations in all aspects of our operations. JustWorkout provides great facilities,
+                    staff and service to all of our members, and a healthy, rewarding workplace for our employees. </p>
+                <a href="" class="btn-contact about-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="photos/inspiration/aboutus.avif">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <hr class="hr">
+        <p>Since 1998 <br> We have been through many tasks and now we can help you to achieve your goal <br> Come and
+            see us to find what we can do and support each other</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+    </section>
+    <!-- ------JavaScript for Tolglee Menu -->
+    <script>
+         const toggle_btn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggle_btn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+    
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/32782fb6bf.js" crossorigin="anonymous"></script>
+</head>
+<title>WORLD GYM</title>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="navbar">
+                <h1>WORLD GYM-</h1>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <ul class="links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="membership.html">MEMBERSHIP</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            
+            
+        </nav>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="membership.html">MEMBERSHIP</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </div>
+        <h2 class="subtitle">Our Memberships</h2>
+    </section>
+
+    <!-- Memberships -->
+
+    <section class="membership">
+        <h2>Memberships We Offer</h2>
+        <p>
+            Here are our offers fot YOU!
+        </p>
+        <div class="row">
+            <div class="member-col1">
+                <h3>BRONZE</h3>
+                <p>$12.99 24hrs ANYTIME</p>
+                <div class="hrzl"></div>
+                <p class="explain">
+                    We offer 24/7 access, the best in strength and cardio equipment, functional and personal training, &
+                    first 3 months with free trial on crossfit & yoga classes.
+                </p>
+            </div>
+
+            <div class="vtcl"></div>
+            <div class="member-col2">
+                <h3>SILVER</h3>
+                <p>$15.99 24hrs ANYTIME <br> with free use of Massage chair and MORE!
+                </p>
+                <div class="hrzl"></div>
+                <p class="explain">
+                    We offer 24/7 access, the best in strength and cardio equipment,<br> functional and personal
+                    training, <br>
+                    first 3 months with free trial on crossfit & yoga classes,
+                    free use of massage chair, parking resevation at rush-hour, hot sauna and spa and MORE!
+                </p>
+            </div>
+            <div class="vtcl"></div>
+            <div class="member-col3">
+                <h3>GOLD</h3>
+                <p>$20.99 24hrs ANYTIME <br> with Free use of Massage Chair, <br> Free WIFI, Access to Recovery Room
+                    <br> and
+                    MORE!
+                <div class="hrzl"></div>
+                <p class="explain">
+                    Everything DOUBLE! <br>
+                    Want to work out with your partner? or friend? <br>
+                    We offer 24/7 access, the best in strength and cardio equipment, functional and personal
+                    training, first 3 months with free trial on crossfit & yoga classes,
+                    free use of massage chair, free WIFI, access to recovery room, parking resevation at rush-hour,
+                    hot sauna and spa and MORE!
+                </p>
+
+                </p>
+            </div>
+        </div>
+
+        <a href="" class="btn-contact mem-btn">Contact us to register</a>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <hr class="hr">
+        <p>Since 1998 <br> We have been through many tasks and now we can help you to achieve your goal <br> Come and
+            see us to find what we can do and support each other</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+    </section>
+    <!-- ------JavaScript for Tolglee Menu -->
+    <script>
+        const toggle_btn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggle_btn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+    
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
